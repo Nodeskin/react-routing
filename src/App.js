@@ -6,12 +6,16 @@ import Book from "./pages/Book";
 import NewBook from "./pages/NewBook";
 import NotFound from "./pages/NotFound";
 import BookLayoutComp from "./BookLayoutComp";
+import Font from "./Font";
+import DataFetching from "./DataFetching"
+
 
 function App() {
   return (
     <>  
-     <nav>
-        <ul>
+     {/* <nav>
+        <ul className="uls">
+          <Font to = '/'/>
           <li>
             <Link  to="/">Home</Link>
           </li>
@@ -19,7 +23,8 @@ function App() {
             <Link to="/book">Books</Link>
           </li>
         </ul>
-      </nav>
+      </nav> */}
+      <DataFetching/>
 
       <Routes>
         <Route path="/" element={<Home />} />
